@@ -1,0 +1,574 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DanTech Portfolio -- DanTech Hub</title>
+  <meta name="description" content="DanTech Portfolio -- Okonkwo Godswill, frontend dev. Dark neon portfolio with animations, projects, and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- favicon -->
+  <meta name="theme-color" content="#041025" />
+</head>
+<body>
+  <!-- Sticky header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="DanTech Home">
+        <span class="logo">DanTech</span>
+      </a>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn-ghost" id="github-btn" href="https://github.com/DanTech-Hub" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Shortcut dots -->
+  <div class="shortcut-dots" aria-hidden="false">
+    <a href="#hero" title="Home" class="dot active"></a>
+    <a href="#about" title="About" class="dot"></a>
+    <a href="#skills" title="Skills" class="dot"></a>
+    <a href="#projects" title="Projects" class="dot"></a>
+    <a href="#contact" title="Contact" class="dot"></a>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+  <div class="intro">
+    <h1>Hey guys 👋, my name's <span>Okonkwo Godswill Chibueze</span></h1>
+    <p>Founder of <strong>DanTech Hub</strong> -- a frontend developer who builds sleek, modern, and interactive websites that redefine user experience. I craft digital products that make life easier, smarter, and faster.</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </div>
+         
+        <div class="hero-media" data-aos="fade-left">
+          <!-- Hacker avatar (picked free) -->
+          <div class="avatar-card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Hacker avatar" />
+            <div class="avatar-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt" data-aos="fade-up">
+      <div class="container">
+        <h3 class="section-title">About</h3>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a frontend developer focused on elegant UI, animation, and accessibility.
+              I help startups and creators build frontends that feel fast and delightful.
+              From responsive layouts to interactive animations (AOS + GSAP), I ship code that scales.
+              DanTech Hub is my way of mentoring others to build -- we teach, we ship, we iterate.
+            </p>
+
+            <ul class="bullets">
+              <li>Frontend: HTML, CSS, JavaScript (ES6+)</li>
+              <li>Animations: GSAP, AOS</li>
+              <li>Tooling: Git, Netlify, Chrome DevTools</li>
+              <li>Design: Responsive, Accessible, Performance-minded</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="num">12</div>
+              <div class="label">Projects shipped</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">1:1</div>
+              <div class="label">Mentorship</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">92%</div>
+              <div class="label">Grad satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-aos="fade-up">
+      <div class="container">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>HTML &amp; Semantics</h4>
+            <div class="bar"><span style="width:95%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>CSS (Layouts & Anim)</h4>
+            <div class="bar"><span style="width:92%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>JavaScript (ES6+)</h4>
+            <div class="bar"><span style="width:88%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>GSAP & AOS</h4>
+            <div class="bar"><span style="width:90%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt" data-aos="fade-up">
+      <div class="container">
+        <h3 class="section-title">Projects</h3>
+        <div class="projects-grid">
+          <!-- Live project (featured) -->
+          <article class="project-card" data-aos="zoom-in">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1526378728078-1d3b1a06f4d7?q=80&w=1200&auto=format&fit=crop" alt="Live project screenshot" />
+            </div>
+            <div class="project-body">
+              <h4>DanTech Hub -- Course Site</h4>
+              <p>12-week project-based course website -- deploys on Netlify, includes application form and admin dashboard.</p>
+              <div class="project-links">
+                <a class="btn-sm" href="https://DanTech-Hub.netlify.app" target="_blank" rel="noopener">Live demo</a>
+                <a class="btn-sm ghost" href="https://github.com/DanTech-Hub" target="_blank" rel="noopener">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Example secondary card -->
+          <article class="project-card" data-aos="zoom-in" data-aos-delay="80">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1543128639-4cb7e6e1a1b8?q=80&w=1200&auto=format&fit=crop" alt="project screenshot" />
+            </div>
+            <div class="project-body">
+              <h4>Interactive Dashboard</h4>
+              <p>Realtime UI with WebSockets and polished animations for enterprise metrics.</p>
+              <div class="project-links">
+                <a class="btn-sm" href="#" target="_blank" rel="noopener">View</a>
+                <a class="btn-sm ghost" href="#" target="_blank" rel="noopener">Source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <div class="container contact-grid">
+        <div class="contact-left">
+          <h3 class="section-title">Contact</h3>
+          <p>Want to work together or ask a question? Use the form -- I'll reply within 24–48 hours.</p>
+
+          <div class="contact-info">
+            <div><strong>WhatsApp</strong>: <a href="https://wa.me/2349118403900" target="_blank" rel="noopener">Chat</a></div>
+            <div><strong>Live site</strong>: <a href="https://DanTech-Hub.netlify.app" target="_blank" rel="noopener">DanTech Hub</a></div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" autocomplete="off" aria-label="Contact form">
+          <label for="cf-name">Full name</label>
+          <input id="cf-name" name="name" type="text" placeholder="Jane Doe" required>
+
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <button type="button" id="reset-btn" class="btn btn-ghost">Reset</button>
+          </div>
+
+          <div id="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-left">© <span id="year"></span> DanTech Hub</div>
+      <div class="foot-right">Built with <span class="neon">HTML</span> + <span class="neon">CSS</span> + <span class="neon">JS</span></div>
+    </div>
+  </footer>
+
+  <!-- Success popup -->
+  <div id="success-popup" class="success-popup" aria-hidden="true">Message sent ✅</div>
+
+  <!-- GSAP & AOS & EmailJS -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<form id="contact-form">
+  <input type="text" name="from_name" placeholder="Your Name" required />
+  <input type="email" name="from_email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form><style>:root{
+  --bg:#041025;
+  --panel:#071827;
+  --muted:#94a3b8;
+  --neon:#00ff7a; /* neon green */
+  --accent:linear-gradient(90deg,#00ff7a,#00ffa2 60%);
+  --glass: rgba(255,255,255,0.03);
+  --card:#0b1a2a;
+  --radius:14px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(0,255,122,0.03), transparent),
+              radial-gradient(900px 400px at 90% 90%, rgba(0,255,122,0.02), transparent),
+              var(--bg);
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* layout container */
+.container{width:92%;max-width:1200px;margin:0 auto}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(4,16,37,0.6), rgba(4,16,37,0.35));
+  border-bottom:1px solid rgba(0,255,122,0.06);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;color:var(--neon);text-decoration:none;font-weight:700;letter-spacing:0.6px}
+.nav{display:flex}
+.nav-list{display:flex;gap:12px;align-items:center;list-style:none}
+.nav-list a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;transition:all .18s}
+.nav-list a:hover{color:#fff;background:rgba(0,255,122,0.04);box-shadow:0 0 18px rgba(0,255,122,0.03) inset}
+.btn-ghost{border:1px solid rgba(255,255,255,0.04);padding:6px 10px;border-radius:8px;color:var(--muted)}
+.btn-ghost:hover{color:var(--neon);transform:translateY(-2px)}
+
+/* nav toggle for small screens */
+.nav-toggle{display:none;background:transparent;border:0;cursor:pointer;padding:8px}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--muted);margin:4px 0;border-radius:2px;transition:all .2s}
+
+/* Shortcut dots */
+.shortcut-dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:70}
+.shortcut-dots .dot{width:12px;height:12px;border-radius:50%;background:transparent;border:1px solid rgba(255,255,255,0.06);display:block;box-shadow:0 0 10px rgba(0,0,0,0.5)}
+.shortcut-dots .dot.active{background:var(--neon);box-shadow:0 0 12px rgba(0,255,122,0.25)}
+
+/* hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: #050505;
+  color: #00ff99;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .intro {
+  max-width: 50%;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px #00ff99;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #b5ffd9;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #00ff99;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #00ff99;
+  transition: 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #00cc77;
+  box-shadow: 0 0 30px #00ff99;
+}
+
+.hero-img img {
+  width: 350px;
+  filter: drop-shadow(0 0 25px #00ff99);
+  animation: glowUp 3s infinite alternate;
+}
+
+/* Simple glow animation */
+@keyframes glowUp {
+  from {
+    filter: drop-shadow(0 0 15px #00ff99);
+  }
+  to {
+    filter: drop-shadow(0 0 35px #00ff99);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* avatar card */
+.avatar-card{position:relative;width:100%;max-width:380px;border-radius:20px;overflow:hidden;border:1px solid rgba(0,255,122,0.05);box-shadow:0 20px 60px rgba(0,0,0,0.6)}
+.avatar-card img{width:100%;display:block;transform:scale(1.02)}
+.avatar-glow{position:absolute;inset:0;background:radial-gradient(circle at 10% 10%, rgba(0,255,122,0.06), transparent 20%),
+             radial-gradient(circle at 90% 90%, rgba(0,255,122,0.04), transparent 30%);pointer-events:none}
+
+/* sections */
+.section{padding:48px 0}
+.section.alt{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border-top:1px solid rgba(255,255,255,0.02)}
+.section-title{font-size:20px;color:var(--neon);margin-bottom:18px}
+
+/* About grid */
+.about-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.about-text p{color:var(--muted);margin-bottom:12px}
+.bullets{list-style:disc;padding-left:18px;color:var(--muted)}
+.about-stats{display:flex;flex-direction:column;gap:12px}
+.stat-card{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+.stat-card .num{font-weight:700;color:var(--neon);font-size:20px}
+.stat-card .label{color:var(--muted);font-size:13px}
+
+/* Skills */
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill h4{margin-bottom:8px}
+.bar{height:10px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
+.bar span{display:block;height:100%;background:linear-gradient(90deg,#00ff7a,#00ffa2);box-shadow:0 8px 20px rgba(0,255,122,0.06)}
+
+/* Projects */
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project-card{display:flex;background:var(--panel);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+.project-thumb img{width:320px;height:100%;object-fit:cover;display:block}
+.project-body{padding:16px;flex:1}
+.project-links{margin-top:12px;display:flex;gap:10px}
+.btn-sm{padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted);text-decoration:none}
+.btn-sm.ghost{border:1px solid rgba(255,255,255,0.04);background:transparent}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:start}
+.contact-form{display:flex;flex-direction:column;gap:10px;background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+.contact-form input,.contact-form textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:12px;border-radius:8px;color:inherit}
+.form-actions{display:flex;gap:10px;margin-top:6px}
+#form-feedback{margin-top:8px;color:var(--muted)}
+
+/* footer */
+.site-footer{padding:24px 0;border-top:1px solid rgba(255,255,255,0.02)}
+.site-footer .container{display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+
+/* success popup */
+.success-popup{position:fixed;left:50%;top:14%;transform:translate(-50%,-50%) scale(0.9);background:linear-gradient(90deg,#002419,#00382b);color:#caffdd;padding:12px 18px;border-radius:10px;box-shadow:0 18px 60px rgba(0,255,122,0.08);opacity:0;pointer-events:none;transition:all .22s}
+
+/* responsive */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .nav-list{display:none}
+  .nav-toggle{display:block}
+  .shortcut-dots{right:8px}
+}
+
+/* small phones */
+@media (max-width:480px){
+  .hero-copy h1{font-size:28px}
+  .hero-copy h2{font-size:15px}
+}</style><script>// ======== INIT AOS ========
+AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic' });
+
+// ======== GSAP subtle entrance ========
+gsap.from(".hero-copy", { y: 20, opacity: 0, duration: 0.9, ease: "power3.out" });
+gsap.from(".avatar-card", { scale: 0.98, opacity: 0, duration: 1, delay: 0.12, ease: "power3.out" });
+
+// ======== NAV TOGGLE ========
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.getElementById('primary-nav');
+navToggle?.addEventListener('click', () => {
+  const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', String(!expanded));
+  nav.classList.toggle('open');
+  // toggle burger animation
+  navToggle.classList.toggle('open');
+});
+
+// close nav on link click
+document.querySelectorAll('#primary-nav a').forEach(a => {
+  a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded','false');
+  });
+});
+
+// ======== SCROLL BEHAVIOR & ACTIVE DOTS ========
+const sections = document.querySelectorAll('main section[id]');
+const dots = document.querySelectorAll('.shortcut-dots .dot');
+
+function setActiveDot() {
+  let idx = 0;
+  sections.forEach((sec, i) => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top <= window.innerHeight * 0.45 && rect.bottom >= 120) idx = i;
+  });
+  dots.forEach((d,i)=> d.classList.toggle('active', i === idx));
+}
+setActiveDot();
+window.addEventListener('scroll', setActiveDot);
+
+// smooth scroll for all in-page links
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener('click', (e)=>{
+    const id = link.getAttribute('href');
+    if (!id || id === '#') return;
+    const el = document.querySelector(id);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth', block: 'start'});
+    }
+  });
+});
+
+// ======== YEAR ========
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ======== Contact form (EmailJS) ========
+// We'll use EmailJS: https://www.emailjs.com/
+// You must create an EmailJS account and create a service + template, then paste your IDs below.
+(function(){
+  if(!window.emailjs){ console.warn('EmailJS not loaded'); return; }
+  emailjs.init('YOUR_EMAILJS_USER_ID'); // <-- replace with your EmailJS user id (public key)
+})();
+
+const contactForm = document.getElementById('contact-form');
+const feedback = document.getElementById('form-feedback');
+const popup = document.getElementById('success-popup');
+const resetBtn = document.getElementById('reset-btn');
+
+function showPopup(msg='Sent') {
+  popup.textContent = msg;
+  popup.style.opacity = '1';
+  popup.style.transform = 'translate(-50%,-50%) scale(1)';
+  popup.setAttribute('aria-hidden','false');
+  setTimeout(()=> {
+    popup.style.opacity = '0';
+    popup.style.transform = 'translate(-50%,-50%) scale(0.95)';
+    popup.setAttribute('aria-hidden','true');
+  }, 2200);
+}
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    feedback.textContent = '';
+
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+
+    if (!name || !email || !message) {
+      feedback.textContent = 'Please fill all fields.';
+      return;
+    }
+
+    // basic email regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      feedback.textContent = 'Enter a valid email.';
+      return;
+    }
+
+    // **SEND via EmailJS**
+    // Replace 'your_service_id' and 'your_template_id' with your EmailJS IDs.
+    const serviceID = 'dantechhub77@gmail.com';
+    const templateID = 'template_zge7f6b';
+
+    // Template params match your EmailJS template variables
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+      subject: `New message from ${name} -- DanTech Portfolio`
+    };
+
+    try {
+      feedback.textContent = 'Sending...';
+      await emailjs.send(serviceID, templateID, templateParams);
+      feedback.textContent = 'Message sent! Thanks.';
+      showPopup('Message sent ✅');
+      contactForm.reset();
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      feedback.textContent = 'Could not send -- try again later.';
+    }
+  });
+}
+
+resetBtn?.addEventListener('click', () => {
+  contactForm.reset();
+  feedback.textContent = '';
+});
+
+// ======== Small enhancements ========
+// animate project cards on hover
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('mouseenter', () => gsap.to(card, { y: -6, duration: 0.25, ease: 'power2.out' }));
+  card.addEventListener('mouseleave', () => gsap.to(card, { y: 0, duration: 0.3, ease: 'power2.out' }));
+});
+
+// Initialize EmailJS
+(function() {
+    emailjs.init("kVN6l8ibLj3T-wipn"); // Replace with your Public Key
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("dantechhub77@gmail.com", "template_zge7f6b", this)
+    .then(function(response) {
+        alert("✅ Message sent successfully!");
+        document.getElementById("contact-form").reset();
+    }, function(error) {
+        alert("❌ Failed to send message. Please try again.");
+        console.log("FAILED...", error);
+    });
+});
+</script>
